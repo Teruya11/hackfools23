@@ -15,4 +15,5 @@ function q4() {
 }
 
 function q5() {
-  alert("Ao contrário de alguns rumores, não há uma relação comprovada entre os vírus terrestres e os exovírus - muito pelo contrário. Grande parte dos esforços na guerra contra os exovírus advém da comunidade viral terrestre")}
+  alert("Ao contrário de alguns rumores, não há uma relação comprovada entre os vírus terrestres e os exovírus - muito pelo contrário. Grande parte dos esforços na guerra contra os exovírus advém da comunidade viral terrestre")
+}
