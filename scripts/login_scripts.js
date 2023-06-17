@@ -8,7 +8,7 @@ function submit() {
 
     login_btn.innerText = "Submitting...";
 
-    if (usrname == "Bathos" && passwd == "acelga") {
+    if (usrname == "DJ_Rato" && passwd == "queijo") {
         window.location.href = "../index.html";
     }
     else {
