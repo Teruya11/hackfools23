@@ -1,0 +1,266 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, serif;
+	box-sizing: border-box;
+}
+
+.header {
+	position: sticky;
+	background-color: #FFFFFF;
+	top: -1;
+	left: 0;
+	height: 21vh;
+	width: 100%;
+	padding: 0 8% 0 3%;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 80px;
+}
+
+.nav-links {
+	padding: 28px 0;
+	padding-right: 0;
+}
+
+.nav-links li {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.nav-links li a {
+	text-decoration: none;
+	color: black;
+	padding: 5px 0;
+	position: relative;
+	transition: 0.5s;
+
+}
+
+.nav-links li a::after {
+	content: '';
+	background: #7734e7;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.nav-links li a:hover {
+	font-size: 20px;
+  	font-size-adjust: 20px;
+}
+
+#noheader {
+	margin-right: 260px;
+	margin-left: 12px;
+	padding: .6em;
+}
+
+.colunas {
+	font-size: 20px;
+}
+
+.colunas h2 {
+	margin-bottom: .6em;
+}
+
+.colunas h3 {
+	margin-bottom: .4em;
+	margin-top: .4em;
+}
+
+.colunas p, .imagens p {
+	margin-bottom: .8em;
+	margin-top: .6em;
+}
+
+.colunas ul {
+	padding-left: 1em;
+	font-style: italic;
+}
+
+.colunas li {
+	margin-bottom: .6em;
+}
+
+.menu2 {
+	position: fixed;
+	margin-top: 21vh;
+	z-index: 5000;
+	top: 0;
+	right: 0;
+	width: 250px;
+	height: 100vh;
+	background-color: #f1f1f1;
+	padding: 20px;
+	overflow-y: scroll;
+}
+
+  
+  .dropdown-menu {
+    position: relative;
+  }
+  
+  .dropdown-menu > button {
+    position: relative;
+    z-index: 2;
+    transition: 0.3s;
+  }
+  
+  .dropdown-menu > button:hover {
+    background: #080808;
+  }
+  
+  .dropdown-menu.open > button {
+    background: -webkit-linear-gradient(to bottom, #6cc518, #498323);
+    background: linear-gradient(to bottom, #6cc518, #498323);
+  }
+  
+  .dropdown-menu button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    width: 230px;
+    height: 50px;
+    border-radius: 12px;
+    color: #fdfefe;
+    background: #17202a;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .dropdown-menu button .chevron {
+    margin-left: auto;
+  }
+  
+  .dropdown-menu__labels {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 168px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #17202a;
+    border-radius: 12px;
+    border-top: 0;
+    translate: 0 -20px;
+    transition: 0.4s;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .menu {
+    display: grid;
+    grid-template-rows: 40px max-content;
+    gap: 10px;
+  }
+  
+  .toggle {
+    all: unset;
+    background-color: rgb(107, 26, 139);
+    color: white;
+    width: 150px;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    transform: rotate(45deg);
+    transition: 0.4s;
+  }
+  
+  .list {
+    background-color: white;
+    color: #444;
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(4, 40px);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 0;
+    transition: 0.4s;
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.4s, transform 0.4s var(--delay);
+    transform: translateX(-100%);
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .list-item:hover {
+    background-color:rgb(107, 26, 139);
+    color: #fff;
+}
+
+.toggle:focus::after {
+    transform: rotate(225deg);
+}
+
+.toggle:focus ~ .list {
+    height:160px;
+}
+
+.toggle:focus ~ .list .list-item {
+    transform: translateX(0);
+}
+
+.bottom-header {
+  z-index: 6000;
+  font-size: 13;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 2px;
+  text-align: center;
+}
+
+.baah {
+  text-align: center;
+}
